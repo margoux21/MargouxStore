@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #22c3e3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .promo-banner {
+            background-color: #2f3542;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .promo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .promo-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .promo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .promo-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .promo-content {
+            padding: 20px;
+        }
+
+        .promo-title {
+            font-size: 20px;
+            color: #2f3542;
+            margin-bottom: 10px;
+        }
+
+        .promo-price {
+            font-size: 24px;
+            color: #22c3e3;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #777;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .discount-tag {
+            background-color: #22c3e3;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .buy-button {
+            background-color: #22c3e3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #22c3e3;
+        }
+
+        .countdown {
+            background-color: #2f3542;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .promo-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="promo-banner">
+        🎉 PROMO SPESIAL! Diskon hingga 50% untuk semua produk! 🎉
+    </div>
+    
+    <header class="header">
+        <h1>SUPER SALE!</h1>
+        <p>Jangan lewatkan penawaran terbaik minggu ini</p>
+    </header>
+
+    <div class="container">
+        <div class="countdown">
+            Promo berakhir dalam: 2 hari 15 jam 30 menit
+        </div>
+
+        <div class="promo-grid">
+            <!-- Produk 1 -->
+            <div class="promo-card">
+                <div class="promo-image"><img src="smartphone.jpg" alt=""></div>
+                <div class="promo-content">
+                    <h3 class="promo-title">HP RealMe 6 Pro</h3>
+                    <div>
+                        <span class="original-price">Rp 2.073.000</span>
+                        <span class="discount-tag">-10%</span>
+                    </div>
+                    <div class="promo-price">Rp 1.899.000</div>
+                    <button class="buy-button">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="promo-card">
+                <div class="promo-image"><img src="smartwatch1.jpg" alt=""></div>
+                <div class="promo-content">
+                    <h3 class="promo-title">Smart Watch Series 5</h3>
+                    <div>
+                        <span class="original-price">Rp 2.499.000</span>
+                        <span class="discount-tag">-30%</span>
+                    </div>
+                    <div class="promo-price">Rp 1.749.000</div>
+                    <button class="buy-button">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="promo-card">
+                <div class="promo-image"><img src="airbud.jpg" alt=""></div>
+                <div class="promo-content">
+                    <h3 class="promo-title">Wireless Earbuds Pro</h3>
+                    <div>
+                        <span class="original-price">Rp 1.999.000</span>
+                        <span class="discount-tag">-50%</span>
+                    </div>
+                    <div class="promo-price">Rp 999.000</div>
+                    <button class="buy-button">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
